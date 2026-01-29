@@ -1,4 +1,149 @@
+html {
+   font-size: 14px;
+}
+
+#navbar {
+
+   padding: 8px;
+   margin: 0px;
+}
+
+#logo {
+   height: 30px;
+}
+
+#jovian-logo {
+   display: none;
+}
+
 body {
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Inter', sans-serif;
+   font-size: 1em;
+   color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Robot', sans-serif;
+   font-weight: 600px;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   color: #2b7fff;
+}
+
+#logo {
+   display: block;
+}
+
+#jovian-logo {
+   display: none;
+}
+
+#banner {
+   object-fit: cover;
+   height: 100px;
+   width: 100%;
+
+}
+
+h1 {
+   margin: 8px 0;
+   text-align:center;
+}
+
+
+@media screen and (min-width:576px) {
+   html {
+       font-size: 16px;
+       
+   }
+   
+
+   #jovian-logo {
+      display: block;
+      margin-bottom:100px;
+   }
+
+   #logo {
+      display: none;
+   }
+
+   #banner {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+   }
+   h1{
+      margin:16px 0;
+   }
+}
+
+@media screen and (min-width:768px) {
+   #bannner {
+      height: 250px;
+   }
+   h1{
+      margin:20px 0;
+   }
+}
+
+@media screen and (min-width:992px) {
+   #logo {
+      display: none;
+   }
+
+
+}
+
+@media screen and (min-width:1200px) {
+
+}
+   html {
+      font-size: 20px;
+   }
+
+
+   #banner {
+      height: 350px;
+   }
+
+   #about{
+      max-width:800px;
+
+
+}
+#about {
+ display: flex;
+   max-width: 500px;
+   margin: 0 auto;
+   padding:8px;
+   flex-direction:column;
+
+}
+  
+
+
+
+
+
+
+
+
+
+
+/* body {
    margin: 0px;
    padding: 0px;
    font-family: 'Inter', sans-serif;
@@ -6,24 +151,19 @@ body {
 }
 
 
+
 #navbar {
    padding: 8px;
 }
 
-#logo {
-   height: 30px;
-}
+
 
 #banner {
    width: 100%;
    object-fit: cover;
 }
 
-#about {
-   display: flex;
-   max-width: 800px;
-   margin: 0 auto;
-}
+
 
 h1,
 h2,
@@ -183,3 +323,4 @@ select {
    text-align: center;
    color: darkgreen;
 }
+   */
