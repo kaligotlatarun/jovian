@@ -1,8 +1,384 @@
+html {
+   font-size: 14px;
+
+}
+
+#navbar {
+
+   padding: 8px;
+   margin: 0px;
+}
+
+#logo {
+   height: 30px;
+}
+
+#jovian-logo {
+   display: none;
+}
+
 body {
    margin: 0px;
    padding: 0px;
    font-family: 'Inter', sans-serif;
+   font-size: 1em;
+   color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Robot', sans-serif;
+   font-weight: 600px;
+
+}
+
+a {
+   text-decoration: none;
+}
+
+a:hover {
+   color: #2b7fff;
+}
+
+#logo {
+   display: block;
+}
+
+#jovian-logo {
+   display: none;
+}
+
+#banner {
+   object-fit: cover;
+   height: 200px;
+   width: 100%;
+
+}
+
+h1 {
+   margin: 8px 0;
+   text-align: center;
+}
+
+#team-image {
+   height: 200px;
+}
+
+#jobs-list {
+   display: block;
+}
+
+#jobs-table {
+   display: none;
+}
+
+.job {
+   border: 1px solid grey;
+   margin-top: 8px;
+   border-radius: 5px;
+   padding: 10px;
+}
+
+
+@media screen and (min-width:576px) {
+   html {
+      font-size: 16px;
+
+   }
+
+
+   #jovian-logo {
+      display: block;
+      margin-bottom: 100px;
+   }
+
+   #logo {
+      display: none;
+   }
+
+   #banner {
+      object-fit: cover;
+      width: 100%;
+      height: 200px;
+      margin-top: -80px;
+   }
+
+   h1 {
+      margin: 16px 0;
+   }
+
+   #description {
+      padding: 0 30px;
+   }
+
+   #team-image {
+      height: 400px;
+      width: 600px;
+      margin-left: 80px;
+
+   }
+
+   #jobs-table {
+      display: block;
+      width: 100%;
+   }
+
+   #jobs-list {
+      display: none;
+   }
+}
+
+#jobs {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 0 8px;
+}
+
+@media screen and (min-width:768px) {
+   #bannner {
+      height: 250px;
+      margin-top: -80px;
+   }
+
+   h1 {
+      margin: 20px 0;
+   }
+
+   #description {
+      padding-right: 8px;
+      font-size: 1.25rem;
+
+   }
+
+   #image {
+      height: 400px;
+
+   }
+
+   #team-image {
+      height: 400px;
+
+   }
+
+   #jobs {
+      min-width: 800px;
+      margin: 0 126px;
+   }
+
+   #jobs-list {
+      display: none;
+   }
+   #footer-links{
+      display:inline;
+      word-spacing:15px;
+   }
+
+
+}
+
+@media screen and (min-width:992px) {
+   #logo {
+      display: none;
+   }
+
+   #description {
+      padding: 0 12px;
+
+   }
+
+   #image {
+
+      margin-right: -700px;
+
+
+   }
+
+   #team-image {
+      height: 100%;
+      min-width: 500px;
+
+   }
+
+}
+
+@media screen and (min-width:1200px) {
+
+
+   html {
+      font-size: 20px;
+   }
+
+
+   #banner {
+      height: 350px;
+      margin-top: -80px;
+   }
+
+   #about {
+      max-width: 800px;
+   }
+
+   #about {
+      display: flex;
+      margin: 0 8px;
+      padding: 8px;
+      flex-direction: row;
+
+   }
+
+   #description {
+      width: 75%;
+      padding: 0 100px;
+   }
+
+   #team-image {
+      border-radius: 5px;
+      width: 100%;
+      max-width: 350px;
+      margin-left: -150px;
+
+   }
+
+   #image {
+      margin-left: 170px;
+   }
+
+   #jobs-list {
+      display: none;
+   }
+
+
+
+   #jobs-table {
+      display: table;
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+
+   }
+
+   #application-form {
+      margin-left: 120px;
+   }
+
+  
+
+}
+
+h2 {
+   text-align: center;
+}
+
+#jobs-table {
+   border-collapse: collapse;
+   width: 100%;
+
+}
+
+#jobs-table tr:nth-child(odd) {
+   background-color: azure;
+
+}
+
+.jobs-header-row th {
+   border: 1px solid black;
+   padding: 8px;
+   background-color: #a2f4fd;
+   text-align: center;
+   font-size: 1rem;
+}
+
+.jobs-data-row td {
+   border: 1px solid black;
+   padding: 8px;
+}
+
+.job-title {
+   font-size: 1.50rem;
+   font-weight: 500;
+
+}
+
+#job-detail {
+   color: grey;
+}
+
+#application-form {
+   max-width: 500px;
+   padding: 0 8px;
+}
+
+.form-group {
+   margin-top: 2px;
+   padding: 4px;
+}
+
+#application-form input,
+select {
+   width: 80%;
+   padding: 8px;
+   border-radius: 5px;
+   border: 1px solid gray;
+   margin: 0 auto;
+   font-size: 1.2rem;
+
+}
+
+.form-group textarea {
+   width: 80%;
+   padding: 8px;
+   font-size: 1.2rem;
+   border-radius: 5px;
+   border: 1px solid gray;
+}
+
+.form-group input[type="submit"] {
+   padding: 16px 16px 16px 16px;
+   background-color: #2b7fff;
+   color: white;
+   font-weight: 700;
+}
+
+
+#footer {
+   padding: 0 auto;
+   margin-top: 60px;
+   text-align: center;
+   margin-right: 20px;
+}
+
+
+#footer li {
+   text-align: center;
+   margin-top: 10px;
+   list-style: none;
+   color: #2b7fff;
+}
+
+.last-one{
+   text-align:center;
+   color:green;
+}
+
+
+
+
+
+
+
+/* body {
+   margin: 0px;
+   padding: 0px;
+   font-family: 'Inter', sans-serif;
    font-size: 16px;
+}
+
+#image {
+   width: 50%;
 }
 
 
@@ -10,20 +386,14 @@ body {
    padding: 8px;
 }
 
-#logo {
-   height: 30px;
-}
+
 
 #banner {
    width: 100%;
    object-fit: cover;
 }
 
-#about {
-   display: flex;
-   max-width: 800px;
-   margin: 0 auto;
-}
+
 
 h1,
 h2,
@@ -60,54 +430,16 @@ h6 {
    font-size: 1rem;
 }
 
-#description {
-   width: 50%;
-   padding: 0 8px;
-   font-size: 1.25rem;
-}
 
-#image {
-   width: 50%;
-}
 
-#team-image {
-   border-radius: 5px;
-   width: 100%
-}
 
-#jobs-table {
-   width: 100%;
-   border: 1px solid black;
-   border-collapse: collapse;
-}
 
-#jobs-table tr:nth-child(odd) {
-   background-color: azure;
 
-}
 
-.jobs-header-row th {
-   border: 1px solid black;
-   padding: 8px;
-   background-color: #a2f4fd;
-   text-align: center;
-   font-size: 1rem;
-}
 
-.jobs-data-row td {
-   border: 1px solid black;
-   padding: 8px;
-}
 
-h2 {
-   text-align: center;
-}
 
-#jobs {
-   max-width: 800px;
-   margin: 0 auto;
-   padding: 0 8px;
-}
+
 
 
 h3 {
@@ -126,60 +458,7 @@ a:hover {
    color: #2b7fff;
 }
 
-#application-form {
-   max-width: 800px;
-   padding: 0 8px;
-   margin: 0 auto;
 
 
-}
 
-.form-group {
-   margin-top: 2px;
-   padding: 4px;
-}
-
-#application-form input,
-select {
-   padding: 8px;
-   border-radius: 5px;
-   border: 1px solid gray;
-   margin: 0 auto;
-   font-size: 1.2rem;
-
-}
-
-.form-group textarea {
-   width: 50%;
-   padding: 8px;
-   font-size: 1.2rem;
-   border-radius: 5px;
-   border: 1px solid gray;
-}
-
-.form-group input[type="submit"] {
-   padding: 16px 16px 16px 16px;
-   background-color: #2b7fff;
-   color: white;
-   font-weight: 700;
-}
-
-#footer {
-   padding: 0 auto;
-   margin-top: 60px;
-   text-align: center;
-}
-
-
-#footer li {
-   display: inline;
-   margin-top: 60px;
-   list-style: none;
-   padding: 0 8px;
-   color: #2b7fff;
-}
-
-#last-one {
-   text-align: center;
-   color: darkgreen;
-}
+   */
